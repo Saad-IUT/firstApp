@@ -1,21 +1,13 @@
 import React from 'react'
 import { Text, StyleSheet, FlatList } from 'react-native'
-import Layout from '../../Layout'
+import Layout from '../Layout'
 
-const Course2 = () => {
-  const courseList = [
-    { name: 'HUM 4247', key: '1' },
-    { name: 'HUM 4249', key: '2' },
-    { name: 'MATH 4241', key: '3' },
-    { name: 'CSE 4203', key: '4' },
-    { name: 'CSE 4205', key: '5' },
-    { name: 'SWE 4201', key: '6' },
-  ]
-
+const Course = props => {
+  const { courseList, semester } = props.route.params
   return (
     <Layout>
       <Text style={{ color: 'blue', fontSize: 35, marginBottom: 10 }}>
-        Second Semester
+        {`${semester} Semester`}
       </Text>
       <FlatList
         data={courseList}
@@ -37,4 +29,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default Course2
+export default Course
