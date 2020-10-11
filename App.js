@@ -13,11 +13,31 @@ function App() {
   return (
     <NavigationContainer>
       <stack.Navigator initialRouteName='Home'>
-        <stack.Screen name='Home' component={Home} />
-        <stack.Screen name='Semesters' component={Semesters} />
-        <stack.Screen name='Profile' component={Profile} />
-        <stack.Screen name='Course' component={Course} />
-        <stack.Screen name='Faculty List' component={Faculty} />
+        <stack.Screen
+          name='Home'
+          component={Home}
+          options={{ headerTitleAlign: 'center' }}
+        />
+        <stack.Screen
+          name='Semesters'
+          component={Semesters}
+          options={{ headerTitleAlign: 'center' }}
+        />
+        <stack.Screen
+          name='Profile'
+          component={Profile}
+          options={{ headerTitleAlign: 'center' }}
+        />
+        <stack.Screen
+          name='Course'
+          component={Course}
+          options={{ headerTitleAlign: 'center' }}
+        />
+        <stack.Screen
+          name='Faculty List'
+          component={Faculty}
+          options={{ headerTitleAlign: 'center' }}
+        />
       </stack.Navigator>
     </NavigationContainer>
   )
