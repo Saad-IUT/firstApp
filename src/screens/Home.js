@@ -41,6 +41,14 @@ const Home = ({ navigation }) => {
           }}
         />
       </View>
+      <View style={styles.button}>
+        <Button
+          title='Test orientation'
+          onPress={() => {
+            navigation.navigate('Orientation')
+          }}
+        />
+      </View>
     </Layout>
   )
 }

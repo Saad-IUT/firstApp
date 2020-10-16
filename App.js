@@ -6,6 +6,7 @@ import Semesters from './src/screens/Semesters'
 import Profile from './src/screens/Profile'
 import Course from './src/screens/Course'
 import Faculty from './src/screens/Faculty'
+import Orientation from './src/screens/Orientation'
 
 const stack = createStackNavigator()
 
@@ -36,6 +37,11 @@ function App() {
         <stack.Screen
           name='Faculty List'
           component={Faculty}
+          options={{ headerTitleAlign: 'center' }}
+        />
+        <stack.Screen
+          name='Orientation'
+          component={Orientation}
           options={{ headerTitleAlign: 'center' }}
         />
       </stack.Navigator>
